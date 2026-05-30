@@ -1,4 +1,4 @@
-import{useState,useEffect,useRef}from 'react';
+import React,{useState,useEffect,useRef}from 'react';
 const STATUTS_C=['Planifie','En cours','Termine'],STATUTS_T=['A faire','En cours','Fait'],TYPES=['Pose filet','Depose filet','Maintenance','Inspection','Autre'];
 const uid=()=>Date.now().toString()+Math.floor(Math.random()*1e5);
 const COLOR={'Planifie':'#3b82f6','En cours':'#f59e0b','Termine':'#22c55e','A faire':'#6b7280','Fait':'#22c55e'};
