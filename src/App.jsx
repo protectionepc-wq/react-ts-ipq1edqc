@@ -1,7 +1,6 @@
 import React,{useState,useEffect,useRef}from 'react';
 import{db}from './firebase';
 import{collection,getDocs,doc,setDoc,deleteDoc}from 'firebase/firestore';
-import MapView from './MapView';
 
 const STATUTS_C=['Planifié','En cours','Terminé'],STATUTS_T=['A faire','En cours','Fait'],TYPES=['Pose filet','Depose filet','Maintenance','Inspection','Autre'];
 const uid=()=>Date.now().toString()+Math.floor(Math.random()*1e5);
